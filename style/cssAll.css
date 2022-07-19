@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root
+{
+    /* -- COLOR --  */
+    --color--primary : #FFECE8;
+    --color--pink : #FFC5BD;
+    --color--white--01 : #ededed;
+    --color--white--02 : #FFFFFF;
+    --color--blue : #1E195B;
+    --color--puiple : #6886EA;
+    --color--puiple--03 : #524DC0; 
+    --color--load : #E7DFDD;
+    /* -- COLOR TEXT --  */
+    --color--text--white : #FFFFFF;
+    --color--text--black : #000000;
+
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    background: var(--color--puiple--03);
+}
+/* -- LOADER --  */
+#preloader
+{
+    background: var(--color--load) url(../asset/loading.gif) no-repeat center center;
+    height: 100vh;
+    background-size: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.App
+{
+    width: 97vw;
+    height: 400vh;
+    background: var(--color--blue);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.container
+{
+    position: relative;
+    width: 99%;
+    height: 98%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* -- MENU --  */
+.menu
+{
+    width: 4%;
+    height:100%;
+    border-radius: 1rem;
+    transition: 0.5s linear;
+    position: relative;
+    bottom: 1.3rem;
+}
+.sl_menu
+{
+    width: 100%;
+    height: 95vh;
+    position: sticky;
+    top: 0;
+}
+.menu:hover
+{
+    width: 20%;
+}
+.menu:hover .content
+{
+    width: 80%;
+}
+.menu:hover .menu_logo
+{
+    flex-direction: row;
+}
+.menu:hover .menu_logo p
+{
+    opacity: 1;
+}
+.menu:hover header ul p
+{
+    display: block;
+}
+.menu:hover header ul li a
+{
+    flex-direction: row;
+}
+.menu:hover header ul li a p
+{
+    opacity: 1;
+}
+.menu_logo
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color--text--black);
+    flex-direction: column;
+    transition: 0.5s;
+}
+.menu_logo p
+{
+    opacity: 0;
+    transition: 0.5s ;
+}
+header
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul li 
+{
+    width: 85%;
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s
+}
+header ul li:hover
+{
+    background: var(--color--puiple);
+}
+header ul li:hover a
+{
+    color: var(--color--text--white);
+}
+header ul li a
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: var(--color--text--black);
+    font-size: 1.5rem;
+}
+header ul li a p
+{
+    transition: 0.5s;
+    opacity: 0;
+    display: none;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+.Menu_mobile
+{
+    display: none;
+}
+/* -- CONTENT --  */
+.content
+{
+    width: 96%;
+    height: 24.5%;
+    border-radius: 1rem;
+    transition: 0.5s linear;
+    position: relative;
+    bottom: 1.3rem;
+}
+.content_box
+{
+    width: 100%;
+    height: 96vh;
+    display: flex;
+    align-items: center;
+}
+/* -- LOGIN --  */
+
+#login
+{
+    display: none;
+} 
+form
+{
+    width: 40rem;
+    height: 30rem;
+    background: var(--color--white--02);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0.2rem solid var(--color--puiple);
+    display: flex;
+    overflow: hidden;
+}
+.form__close
+{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color--puiple);
+}
+.form__close ion-icon 
+{
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--color--text--white);
+    transition: 0.5s;
+}
+.form__close ion-icon:hover
+{
+    color: var(--color--pink);
+}
+.form__close p 
+{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color--puiple);
+    font-weight: 600;
+}
+.form__signin
+{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form__signin p 
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color--puiple);
+}
+.form__signin input
+{
+    width: 50%;
+    height: 2.8rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--color--puiple);
+    margin-top: 1.5rem;
+}
+.form__signin button
+{
+    width: 20%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    transition: 0.5s;
+}
+.form__signin button:hover
+{
+    background: var(--color--puiple);
+    color: var(--color--text--white);
+}
+#Sign_in_check
+{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#Sign_in_check a
+{
+    transition: 0.5s;
+}
+
+#Sign_in_check a:hover
+{
+    color: var(--color--sky);
+}
+/* -- FORM SIGH IN --  */
+#form_register
+{
+    display: none;
+}
+/* -- CALL --  */
+#call 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+}
+.Box_call
+{
+    width: 0%;
+    height: 0%;
+    background: var(--color--white--02);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0.2rem solid var(--color--puiple);
+    display: flex;
+    overflow: hidden;
+}
+.Box_call_left
+{
+    position: relative;
+    flex : 1;
+    height: 100%;
+    background: url(../asset/21.jpg);
+    background-size: cover;
+    /* filter: brightness(70%); */
+    border-right: 0.2rem solid var(--color--puiple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Box_call_left h1 
+{
+    color: var(--color--text--white);
+    font-size: 3rem;
+}
+#close_call
+{
+    position: absolute;
+    color: var(--color--text--white);
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 1.5rem;
+    background: var(--color--puiple);
+    border-radius: 50%;
+    border: 0.1rem solid var(--color--white--02);
+    transition: 0.5s;
+}
+#close_call:hover
+{
+    background: var(--color--white--02);
+    color: var(--color--puiple);
+}
+.Box_call_right
+{
+    position: relative;
+    flex : 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Box_call_right img 
+{
+    width: 10%;
+}
+/* -- REPONSIVE --  */
+@media only screen and (max-width : 46.1875em)
+{
+    .App
+    {
+        margin-top: 0rem;
+        border-radius: 0;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .sl_menu
+    {
+        height: 3rem;
+        width: 25rem;
+        justify-content: center;
+        display: flex;
+    }
+    .menu_logo
+    {
+        display: none;
+    }
+    header
+    {
+        display: none;
+    }
+    .Menu_mobile
+    {
+        display: block;
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .Menu_mobile--logo
+    {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        width: 27%;
+        font-weight: 600;
+        color: var(--color--text--black);
+    }
+
+    .Menu_mobile ion-icon
+    {
+        color: var(--color--text--black);
+        font-size: 1.7rem;
+        margin-right: 1rem;
+    }
+    .Menu_mobile--logo ion-icon
+    {
+        font-size: 1.5rem;
+        transition: 0.5s;
+    }
+    .content
+    {
+        position: relative;
+        bottom: 88rem;
+        left: 0.5rem;
+        z-index: 2;
+    }
+}

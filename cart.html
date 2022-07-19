@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- -- CSS --  -->
+    <link rel="stylesheet" href="style/cssAll.css">
+    <link rel="stylesheet" href="style/cart.css">
+    <!-- -- JS --  -->
+    <!-- <script src="js/index.js"></script> -->
+    <!-- -- FONT --  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <!-- -- ICON --  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- -- LOADING --  -->
+    <div id="preloader"></div>
+    <div class="App">
+        <div class="container">
+            <!-- -- HEADER --  -->
+
+            <div class="menu">
+                <div class="sl_menu">
+                    <div class="menu_logo">
+                        <ion-icon name="balloon-outline"></ion-icon>
+                        <p>Moshimo</p>
+                    </div>
+                    <header>
+                        <ul>
+                            <li><a href="index.html" id="home">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                    <p>Home</p>
+                                </a></li>
+                            <li><a href="shop.html" id="shop">
+                                    <ion-icon name="bag-outline"></ion-icon>
+                                    <p>Shop</p>
+                                </a></li>
+                            <li><a href="cart.html" id="cart">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <p>Cart</p>
+                                </a></li>
+                            <li id="but_call"><a href="#">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <p>Mailbox</p>
+                                </a></li>
+                            <li id="Sign_in"><a href="#">
+                                    <ion-icon name="person-circle-outline"></ion-icon>
+                                    <p>Login</p>
+                                </a></li>
+                        </ul>
+                    </header>
+                    <!-- -- Menu mobile --  -->
+                    <div class="Menu_mobile">
+                        <div class="Menu_mobile--logo">
+                            <ion-icon name="balloon"></ion-icon>
+                            <p>Moshimo</p>
+                        </div>
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- -- CONTENT --  -->
+            <div class="content">
+                <div class="content_box">
+                    <div class="Shopping_cart">
+                        <h2>Shopping Cart</h2>
+                        <div class="Shopping_cart--box">
+                            <div class="Shopping_cart--box_product" id="product">
+                                <div class="box_product_image">
+                                    <img src="asset/27.png" alt="">
+                                </div>
+                                <div class="box_product_name">
+                                    <h2>Sofa</h2>
+                                    <p>Sofa is perfect</p>
+                                </div>
+                                <div class="box_product_number">
+                                    <div class="Box_product_number_list">
+                                        <ion-icon name="add" id="add"></ion-icon>
+                                        <span id="num">1</span>
+                                        <ion-icon name="remove" id="remove"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="box_product_money">
+                                    <span id="money" value="300">300$</span>
+                                </div>
+                                <div class="box_product_delete">
+                                    <ion-icon name="trash" id="trash"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="Shopping_cart--box_product" id="product">
+                                <div class="box_product_image">
+                                    <img src="asset/32.png" alt="">
+                                </div>
+                                <div class="box_product_name">
+                                    <h2>Sofa</h2>
+                                    <p>Sofa is beautyfull</p>
+                                </div>
+                                <div class="box_product_number">
+                                    <div class="Box_product_number_list">
+                                        <ion-icon name="add" id="add"></ion-icon>
+                                        <span id="num">1</span>
+                                        <ion-icon name="remove" id="remove"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="box_product_money">
+                                    <span id="money" value="300">300$</span>
+                                </div>
+                                <div class="box_product_delete">
+                                    <ion-icon name="trash" id="trash"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="Shopping_cart--box_product" id="product">
+                                <div class="box_product_image">
+                                    <img src="asset/29.png" alt="">
+                                </div>
+                                <div class="box_product_name">
+                                    <h2>Sofa</h2>
+                                    <p>Sofa is perfect</p>
+                                </div>
+                                <div class="box_product_number">
+                                    <div class="Box_product_number_list">
+                                        <ion-icon name="add" id="add"></ion-icon>
+                                        <span id="num">1</span>
+                                        <ion-icon name="remove" id="remove"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="box_product_money">
+                                    <span id="money" value="300">300$</span>
+                                </div>
+                                <div class="box_product_delete">
+                                    <ion-icon name="trash" id="trash"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="Cart_Detail">
+                        <h2>Card Delital</h2>
+                        <img src="asset/38.png" alt="">
+                        <input type="text">
+                        <input type="password">
+                        <input type="date">
+                        <button>Check out</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="login">
+        <form action="#" id="form_login">
+            <div class="form__close">
+                <ion-icon name="close-circle" id="close_form"></ion-icon>
+            </div>
+            <div class="form__signin">
+                <p>Login</p>
+                <input type="text" placeholder="Username" id="User">
+                <input type="password" placeholder="Password" id="Pass">
+                <button id="check_login">Login</button>
+                <p id="Sign_in_check">Don't have an account? <a href="#form_register" id="Register">Register here</a>
+                </p>
+            </div>
+        </form>
+        <!-- -- FORM SIGH IN --  -->
+        <form action="#" id="form_register">
+            <div class="form__close">
+                <ion-icon name="close-circle" id="close_form01"></ion-icon>
+            </div>
+            <div class="form__signin">
+                <p>Register</p>
+                <input type="text" placeholder="Username" id="User">
+                <input type="password" placeholder="Password" id="Pass">
+                <input type="password" placeholder="Re-Password" id="Pass">
+                <button id="check_login">Register</button>
+            </div>
+        </form>
+    </div>
+    <!-- -- CALL --  -->
+    <div id="call">
+        <div class="Box_call" id="Box_call">
+            <div class="Box_call_left">
+                <ion-icon name="close" id="close_call"></ion-icon>
+                <h1>Moshimo</h1>
+            </div>
+            <div class="Box_call_right">
+                <img src="asset/loading_02.gif" alt="">
+                <h1>Mailbox</h1>
+                <p>Thank you for using our service and have a nice day</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // -- LOADER -- 
+    var loader = document.getElementById('preloader');
+    setTimeout(function () {
+        loader.style.display = "none";
+    }, 3000);
+    // -- LOGIN -- 
+    var User = document.getElementById("User");
+    var Pass = document.getElementById("Pass");
+    var check_login = document.getElementById("check_login");
+    var V_User = "admin";
+    var V_Pass = "18102003";
+    check_login.onclick = function () {
+        if (User.value == V_User && Pass.value == V_Pass) {
+            window.open("index.html");
+        } else {
+            alert("Error !!!");
+        }
+    }
+
+    var close_form = document.getElementById('close_form');
+    var login = document.getElementById('login');
+    var Sign_In = document.getElementById("Sign_in");
+    Sign_In.onclick = function () {
+        login.style = `
+            display : block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.212);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        `;
+    }
+    var Register = document.getElementById("Register");
+    var form_register = document.getElementById("form_register");
+    var form_login = document.getElementById("form_login");
+    Register.onclick = function () {
+        form_login.style.display = "none";
+        form_register.style = `
+            display : block;
+            width: 40rem;
+            height: 30rem;
+            background: var(--color--white--02);
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: 0.2rem solid var(--color--puiple);
+            display: flex;
+            overflow: hidden;
+        `;
+    }
+
+    close_form.onclick = function () {
+        login.style.display = "none";
+    }
+    var close_form01 = document.getElementById('close_form01');
+    close_form01.onclick = function () {
+        login.style.display = "none";
+    }
+    // -- Call --
+    var call = document.getElementById('call');
+    var but_call = document.getElementById('but_call');
+    var Box_call = document.getElementById('Box_call');
+    var close_call = document.getElementById('close_call');
+    but_call.onclick = function () {
+        call.style = `
+        display : block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.46);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        `;
+    }
+    Box_call.style = `
+        width : 70%;
+        height : 60%;
+    `;
+    close_call.onclick = function () {
+        call.style.display = "none";
+    }
+    // NUMBER 
+    var add = document.getElementById('add');
+    var remove = document.getElementById("remove");
+    var num = document.getElementById('num');
+    var numb = 1;
+    var money = document.getElementById("money");
+    add.onclick = function () {
+        numb++;
+        num.innerText = numb;
+        money.innerText = 300 * numb + "$";
+    }
+    remove.onclick = function () {
+        numb--;
+        if (numb < 0) {
+            numb = 0;
+        }
+        money.innerText = 300 * numb + "$";
+        num.innerText = numb;
+    }
+    // -- REMOVE -- 
+    var trash = document.getElementById("trash");
+    var product = document.getElementById("product");
+    trash.onclick = function () {
+        product.style.display = "none";
+    }
+</script>
+
+</html>
